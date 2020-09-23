@@ -16,6 +16,8 @@ public class TowerController : MonoBehaviour
     Camera towerCamera = null;
     CameraSelector cameraSelector;
 
+    public bool IsActivated => towerCamera.enabled;
+
     // Start is called before the first frame update
     void Start()
     {
