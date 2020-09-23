@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
-
-    [SerializeField] Transform thirdPersonCamera;
     [SerializeField] float movementSpeed = 6f;
     [SerializeField] float rotationSpeed = 8f;
     [SerializeField] float gravity = 20f;
 
-    [SerializeField] float turnSmoothTime = 0.1f;
-
     // State
     Vector3 movementVector = Vector3.zero;
-    float turnSmoothVelocity;
 
     // Cached Components
     CharacterController controller = null;
@@ -36,28 +31,31 @@ public class ThirdPersonMovement : MonoBehaviour
         HandleMovementInput();
         HandleMovementDirection();
 
-        // Move Player
-        movementVector.y -= gravity;
-        controller.Move(movementVector * Time.deltaTime);
+        // Handle Gravity
+        movementVector.y -= gravity;    
     }
 
     private void HandleMovementInput()
     {
-        if (!controller.isGrounded) return;
-
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(horizontal, 0f, vertical);
+        //Vector3 direction = new Vector3(horizontal, 0f, vertical);
 
         // Only move forward
-        if (vertical >= Mathf.Epsilon)
+        if (vertical > 0f)
         {
             movementVector = transform.forward * movementSpeed;
+        }
+        else if (vertical < 0f)
+        {
+            movementVector = -transform.forward * movementSpeed;
         }
         else
         {
             movementVector = Vector3.zero;
         }
+
+        controller.Move(movementVector * Time.deltaTime);
     }
 
     private void HandleMovementDirection()
