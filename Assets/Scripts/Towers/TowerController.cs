@@ -5,7 +5,7 @@ using UnityEngine;
 public class TowerController : MonoBehaviour
 {
     // Tower Camera Look Controls
-    float mouseSensitivity = 100f;
+    public static float mouseSensitivity = 100f;
     float xRotation = 0f;
 
     // Activation Controls
