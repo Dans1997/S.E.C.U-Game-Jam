@@ -44,16 +44,16 @@ public class TowerController : MonoBehaviour
 
     private void HandleActivation()
     {
-        bool pressedSpaceThisFrame = Input.GetKeyDown(KeyCode.Space);
+        bool pressedEThisFrame = Input.GetKeyDown(KeyCode.E);
 
-        if (towerCamera.enabled && pressedSpaceThisFrame)
+        if (towerCamera.enabled && pressedEThisFrame)
         {
             cameraSelector.ReturnToThirdView();
             return;
         }
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if(distanceToPlayer <= towerRange && pressedSpaceThisFrame)
+        if(distanceToPlayer <= towerRange && pressedEThisFrame)
         {
             cameraSelector.SwitchToCamera(towerCamera);
         }

@@ -30,6 +30,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         HandleMovementInput();
         HandleMovementDirection();
+        HandleMovementJump();
 
         // Handle Gravity
         movementVector.y -= gravity;    
@@ -77,6 +78,14 @@ public class ThirdPersonMovement : MonoBehaviour
         if (Mathf.Abs(desiredRotationAngle) > 10)
         {
             transform.Rotate(Vector3.up * desiredRotationAngle * rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    private void HandleMovementJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Pulou");
         }
     }
 }

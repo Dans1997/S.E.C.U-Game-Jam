@@ -35,7 +35,10 @@ public class ScoreSystem : MonoBehaviour
 
     public void AddScore(int scoreToAdd)
     {
-        score += scoreToAdd;
-        scoreText.text = score.ToString();
+        if (scoreText)
+        {
+            score += scoreToAdd;
+            scoreText.text = score.ToString();
+        }
     }
 }
