@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class TowerShooter : MonoBehaviour
 {
-    [SerializeField] GameObject projectilePrefab;
     [SerializeField] float firePower = 50f;
+
+    // State
+    [SerializeField] TargetCode projectileToShootCode = TargetCode.Blue;
+    [SerializeField] Material projectileMaterial = null;
 
     // Cached Components
     TowerController towerController;
+    ProjectilePool projectilePool;
 
     // Start is called before the first frame update
     void Start()
     {
         towerController = GetComponentInParent<TowerController>();
+        projectilePool = FindObjectOfType<ProjectilePool>();
     }
 
     // Update is called once per frame
@@ -22,9 +27,14 @@ public class TowerShooter : MonoBehaviour
         if (!towerController.IsActivated) return;
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-            Rigidbody projectileBody = projectile.GetComponent<Rigidbody>();
-            projectileBody.AddForce(transform.forward * firePower, ForceMode.Impulse);
+            Projectile projectileToShoot = projectilePool.GetProjectile(); 
+            if(projectileToShoot)
+            {
+                projectileToShoot.transform.position = transform.position;
+                projectileToShoot.target = projectileToShootCode;
+                if(projectileMaterial) projectileToShoot.meshRenderer.material = projectileMaterial;
+                projectileToShoot.rigidBody.AddForce(transform.forward * firePower, ForceMode.Impulse);
+            }
         }
     }
 }

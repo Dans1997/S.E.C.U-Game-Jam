@@ -6,7 +6,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public TargetCode code;
-    [SerializeField] private int scoreValue;
+    [SerializeField] private int scoreValue = 10;
 
     public static event Action<int> OnTargetDestroy;
 
