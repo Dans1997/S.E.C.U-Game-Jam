@@ -16,7 +16,7 @@ public class MenuController : MonoBehaviour
     public Slider sliderX;
     public Slider sliderY;
 
-    public bool isOnPause = false;
+    public bool isOnPause;
 
     public void Start()
     {
@@ -26,12 +26,12 @@ public class MenuController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isOnPause)
+        if (Input.GetKeyDown(KeyCode.Escape) && !isOnPause)
         {
             showPause();
         }
         
-        else if (Input.GetKeyDown(KeyCode.Escape) && !isOnPause)
+        else if (Input.GetKeyDown(KeyCode.Escape) && isOnPause)
         {
             exitPause();
         }
@@ -50,7 +50,7 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
         
-        isOnPause = false;
+        isOnPause = true;
 
         // Unlocking Mouse
         Cursor.lockState = CursorLockMode.None;
@@ -62,7 +62,7 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
 
-        isOnPause = true;
+        isOnPause = false;
 
         // Locking Mouse
         Cursor.lockState = CursorLockMode.Locked;
