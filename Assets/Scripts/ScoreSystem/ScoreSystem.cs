@@ -14,8 +14,11 @@ public class ScoreSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = "0";
-        Target.OnTargetDestroy += Target_TargetDestroyed;
+        if (scoreText)
+        {
+            scoreText.text = "0";
+            Target.OnTargetDestroy += Target_TargetDestroyed;
+        }
     }
 
     private void Target_TargetDestroyed(int scoreToAdd)
