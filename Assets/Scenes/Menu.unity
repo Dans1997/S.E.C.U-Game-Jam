@@ -192,7 +192,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 21300000, guid: 2e86512e21eb07243a08f9d9afffcf27, type: 3}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 21300000, guid: 2e86512e21eb07243a08f9d9afffcf27, type: 3}
+    m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312558548}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 185355552}
+        m_TargetAssemblyTypeName: PlayButtonScript, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -254,7 +254,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59415475}
   m_CullTransparentMesh: 0
---- !u!1 &312558547
+--- !u!1 &185355551
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,36 +262,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 312558549}
-  - component: {fileID: 312558548}
+  - component: {fileID: 185355553}
+  - component: {fileID: 185355552}
   m_Layer: 0
-  m_Name: Menu Controller
+  m_Name: Play Button Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &312558548
+--- !u!114 &185355552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312558547}
+  m_GameObject: {fileID: 185355551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb91652da5bb4234fa4ddde163ad8d05, type: 3}
+  m_Script: {fileID: 11500000, guid: 0038b7aa64f9c3240bc793e0cad1834a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &312558549
+--- !u!4 &185355553
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312558547}
+  m_GameObject: {fileID: 185355551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.797305, y: -0.07137358, z: 93.23851}
+  m_LocalPosition: {x: -26.205036, y: 8.073826, z: -0.84726715}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

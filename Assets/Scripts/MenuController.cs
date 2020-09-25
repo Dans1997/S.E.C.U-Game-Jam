@@ -40,11 +40,6 @@ public class MenuController : MonoBehaviour
         //Debug.Log(freeLook.m_YAxis.m_MaxSpeed);
     }
 
-    public void Play()
-    {
-        SceneManager.LoadScene("Sandbox");
-    }
-
     public void showPause()
     {
         Time.timeScale = 0f;
