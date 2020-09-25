@@ -7,6 +7,7 @@ public class ThirdPersonMovement : MonoBehaviour
     [SerializeField] float movementSpeed = 6f;
     [SerializeField] float rotationSpeed = 8f;
     [SerializeField] float gravity = 20f;
+    [SerializeField] float jumpForce = 600f;
 
     // State
     Vector3 movementVector = Vector3.zero;
@@ -28,9 +29,15 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HandleMovementInput();
-        HandleMovementDirection();
-        HandleMovementJump();
+        if (controller.isGrounded) 
+        {
+            HandleMovementInput();
+            HandleMovementDirection();
+            HandleMovementJump();
+        }
+        
+        movementVector.y -= gravity * Time.deltaTime;
+        controller.Move(movementVector * Time.deltaTime);
     }
 
     private void HandleMovementInput()
@@ -40,22 +47,21 @@ public class ThirdPersonMovement : MonoBehaviour
         //Vector3 direction = new Vector3(horizontal, 0f, vertical);
 
         // Only move forward
-        if (vertical > 0f)
+        if (controller.isGrounded)
         {
-            movementVector = transform.forward * movementSpeed;
+            if (vertical > 0f)
+            {
+                movementVector = transform.forward * movementSpeed;
+            }
+            else if (vertical < 0f)
+            {
+                movementVector = -transform.forward * movementSpeed;
+            }
+            else
+            {
+                movementVector = Vector3.zero;
+            }
         }
-        else if (vertical < 0f)
-        {
-            movementVector = -transform.forward * movementSpeed;
-        }
-        else
-        {
-            movementVector = Vector3.zero;
-        }
-
-        // Handle Gravity
-        movementVector.y -= gravity;
-        controller.Move(movementVector * Time.deltaTime);
     }
 
     private void HandleMovementDirection()
@@ -82,9 +88,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void HandleMovementJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButton("Jump"))
         {
-            Debug.Log("Pulou");
+            movementVector.y = jumpForce;
         }
     }
 }
