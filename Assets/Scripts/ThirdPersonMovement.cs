@@ -30,10 +30,13 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         HandleMovementInput();
         HandleMovementDirection();
+<<<<<<< Updated upstream
         HandleMovementJump();
 
         // Handle Gravity
         movementVector.y -= gravity;    
+=======
+>>>>>>> Stashed changes
     }
 
     private void HandleMovementInput()
@@ -56,6 +59,8 @@ public class ThirdPersonMovement : MonoBehaviour
             movementVector = Vector3.zero;
         }
 
+        // Handle Gravity
+        movementVector.y -= gravity;
         controller.Move(movementVector * Time.deltaTime);
     }
 
