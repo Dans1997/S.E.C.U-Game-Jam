@@ -11,12 +11,18 @@ public class MenuController : MonoBehaviour
 {
 
     public GameObject pauseMenu;
+    public GameObject gameOver;
     public GameObject camObj;
     public CinemachineFreeLook freeLook;
+
+    public Text gameOverScore;
+    public Text gameScore;    
+
     public Slider sliderX;
     public Slider sliderY;
 
     public bool isOnPause;
+    public bool isGameOver;
 
     public void Start()
     {
@@ -28,12 +34,31 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isOnPause)
         {
-            showPause();
+            if (!isGameOver)
+            {
+                showPause();
+            }
         }
         
         else if (Input.GetKeyDown(KeyCode.Escape) && isOnPause)
         {
             exitPause();
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            isGameOver = true;
+        }
+
+        if (isGameOver)
+        {
+            Time.timeScale = 0f;
+            
+            gameOver.SetActive(true);
+            gameOverScore.text = gameScore.text;
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         //Debug.Log(freeLook.m_XAxis.m_MaxSpeed);
@@ -71,6 +96,17 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Default()
+    {
+        sliderX.value = 450f;
+        sliderY.value = 4f;
+    }
+
     public void applySense()
     {
         // Free look camera player sense
@@ -79,6 +115,10 @@ public class MenuController : MonoBehaviour
 
         // Relative sense to the player camera sense
         TowerController.mouseSensitivity = sliderX.value / 4.5f;
+
+        // Player prefs
+        PlayerPrefs.SetFloat("MouseSenseX", sliderX.value);
+        PlayerPrefs.SetFloat("MouseSenseY", sliderY.value);
     }
 
 }
