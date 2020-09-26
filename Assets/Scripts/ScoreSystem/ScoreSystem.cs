@@ -21,8 +21,9 @@ public class ScoreSystem : MonoBehaviour
         }
     }
 
-    private void Target_TargetDestroyed(int scoreToAdd)
+    private void Target_TargetDestroyed(Target targetHit)
     {
+        int scoreToAdd = targetHit.scoreValue;
         Debug.Log("Target Destroyed!");
         AddScore(scoreToAdd);
     }

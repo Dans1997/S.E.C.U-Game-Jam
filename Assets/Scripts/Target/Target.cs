@@ -5,12 +5,16 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    // State
     public TargetCode code;
-    [SerializeField] private int scoreValue = 10;
+    public int scoreValue = 10;
 
-    public static event Action<int> OnTargetDestroy;
+    // Cached Components
+    public MeshRenderer meshRenderer = null;
 
-    private void OnDestroy() => OnTargetDestroy?.Invoke(this.scoreValue);
+    public static event Action<Target> OnTargetDestroy;
+
+    private void OnDestroy() => OnTargetDestroy?.Invoke(this);
 
     // Start is called before the first frame update
     void Start()

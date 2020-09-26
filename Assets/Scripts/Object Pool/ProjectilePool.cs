@@ -41,6 +41,7 @@ public class ProjectilePool : MonoBehaviour
     {
         if (projectilePool.Count <= 0) return null;
         Projectile projectileToReturn = projectilePool.Dequeue();
+        projectileToReturn.rigidBody.velocity = Vector3.zero;
         projectileToReturn.gameObject.SetActive(true);
         return projectileToReturn;
     }
