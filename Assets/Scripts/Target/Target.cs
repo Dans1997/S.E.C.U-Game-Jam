@@ -12,20 +12,10 @@ public class Target : MonoBehaviour
     // Cached Components
     public MeshRenderer meshRenderer = null;
 
-    public static event Action<Target> OnTargetDestroy;
+    public static event Action<Target> OnTargetHitEvent;
 
-    private void OnDestroy() => OnTargetDestroy?.Invoke(this);
-
-    // Start is called before the first frame update
-    void Start()
+    public void OnTargetHit()
     {
-        
+        OnTargetHitEvent?.Invoke(this);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 }
