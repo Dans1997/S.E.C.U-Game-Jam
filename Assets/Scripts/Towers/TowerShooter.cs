@@ -31,6 +31,8 @@ public class TowerShooter : MonoBehaviour
             if(projectileToShoot)
             {
                 projectileToShoot.transform.position = transform.position;
+                projectileToShoot.rigidBody.angularVelocity = Vector3.zero;
+                projectileToShoot.rigidBody.rotation = Quaternion.LookRotation(transform.forward, transform.up);
                 projectileToShoot.target = projectileToShootCode;
                 if(projectileMaterial) projectileToShoot.meshRenderer.material = projectileMaterial;
                 projectileToShoot.rigidBody.AddForce(transform.forward * firePower, ForceMode.Impulse);

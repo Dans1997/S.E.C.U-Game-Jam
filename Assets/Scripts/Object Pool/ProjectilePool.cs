@@ -21,6 +21,7 @@ public class ProjectilePool : MonoBehaviour
             MeshRenderer newMeshRenderer = newProjectile.gameObject.AddComponent<MeshRenderer>();
 
             newProjectile.rigidBody = newRigidbody;
+            newProjectile.rigidBody.constraints = RigidbodyConstraints.FreezeRotationY;
             newProjectile.meshRenderer = newMeshRenderer;
             newProjectile.gameObject.SetActive(false);
             projectilePool.Enqueue(newProjectile);
@@ -33,6 +34,7 @@ public class ProjectilePool : MonoBehaviour
     private void ProjectileCollisionHandler(Projectile projectileToPool)
     {
         projectileToPool.rigidBody.velocity = Vector3.zero;
+        projectileToPool.rigidBody.rotation = Quaternion.identity;
         projectileToPool.gameObject.SetActive(false);
         projectilePool.Enqueue(projectileToPool);
     }
