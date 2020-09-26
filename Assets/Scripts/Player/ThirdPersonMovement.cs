@@ -57,6 +57,14 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 movementVector = -transform.forward * movementSpeed;
             }
+            else if (horizontal < 0f)
+            {
+                movementVector = -transform.right * movementSpeed;
+            }
+            else if (horizontal > 0f)
+            {
+                movementVector = transform.right * movementSpeed;
+            }
             else
             {
                 movementVector = Vector3.zero;
