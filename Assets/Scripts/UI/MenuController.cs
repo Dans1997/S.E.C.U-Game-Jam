@@ -20,6 +20,8 @@ public class MenuController : MonoBehaviour
     public Slider sliderX;
     public Slider sliderY;
 
+    public Toggle crosshairToggled;
+
     public bool isOnPause;
     public bool isGameOver;
 
@@ -35,13 +37,13 @@ public class MenuController : MonoBehaviour
         {
             if (!isGameOver)
             {
-                showPause();
+                ShowPause();
             }
         }
         
         else if (Input.GetKeyDown(KeyCode.Escape) && isOnPause)
         {
-            exitPause();
+            ExitPause();
         }
 
         if (isGameOver)
@@ -59,7 +61,7 @@ public class MenuController : MonoBehaviour
         //Debug.Log(freeLook.m_YAxis.m_MaxSpeed);
     }
 
-    public void showPause()
+    public void ShowPause()
     {
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
@@ -71,7 +73,7 @@ public class MenuController : MonoBehaviour
         Cursor.visible = true;
     }
 
-    public void exitPause()
+    public void ExitPause()
     {
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
@@ -82,7 +84,7 @@ public class MenuController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        applySense();
+        ApplyConfig();
     }
 
     public void Quit()
@@ -99,9 +101,11 @@ public class MenuController : MonoBehaviour
     {
         sliderX.value = 450f;
         sliderY.value = 4f;
+
+        crosshairToggled.isOn = false;
     }
 
-    public void applySense()
+    public void ApplyConfig()
     {
         // Free look camera player sense
         freeLook.m_XAxis.m_MaxSpeed = sliderX.value;
@@ -111,6 +115,8 @@ public class MenuController : MonoBehaviour
         TowerController.mouseSensitivity = sliderX.value / 4.5f;
 
         // Player prefs
+        PlayerPrefs.SetInt("CrosshairToggle", crosshairToggled.isOn == true ? 1 : 0);
+
         PlayerPrefs.SetFloat("MouseSenseX", sliderX.value);
         PlayerPrefs.SetFloat("MouseSenseY", sliderY.value);
     }

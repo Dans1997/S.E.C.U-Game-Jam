@@ -26,4 +26,10 @@ public class Projectile : MonoBehaviour
         // If the projectile collides with anything
         OnProjectileCollision?.Invoke(this);
     }
+
+    // If the projectile leaves the map, it will hit a collider with the isTrigger activated
+    private void OnTriggerEnter(Collider collider)
+    {
+        OnProjectileCollision?.Invoke(this);
+    }
 }
