@@ -51,11 +51,13 @@ public class StaticTargetSpawner : MonoBehaviour
         if (!currentTarget) yield break;
         currentTarget.transform.parent = transform;
 
-        //float spawnDelay = Random.Range(minSpawnDelay, maxSpawnDelay);
-
         int targetCode = Random.Range((int)TargetCode.Red, (int)TargetCode.Black + 1);
         TargetCode targetToSpawnCode = (TargetCode) targetCode;
-        //yield return new WaitForSeconds(spawnDelay);
+        if (canRespawnTargets)
+        {
+            float spawnDelay = Random.Range(minSpawnDelay, maxSpawnDelay);
+            yield return new WaitForSeconds(spawnDelay);
+        }
 
         currentTarget.transform.localPosition = Vector3.zero;
         currentTarget.transform.localScale = new Vector3(1, 1, 1);
