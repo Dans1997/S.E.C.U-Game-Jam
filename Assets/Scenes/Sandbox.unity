@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -887,7 +887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1827,7 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2035,7 +2035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2087,7 +2087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2139,7 +2139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2238,7 +2238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2290,7 +2290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2342,7 +2342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2558,7 +2558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2610,7 +2610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2662,7 +2662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2771,7 +2771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2823,7 +2823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2977,7 +2977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3029,7 +3029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3157,7 +3157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3209,7 +3209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3466,7 +3466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3518,7 +3518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3701,7 +3701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3753,7 +3753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3805,7 +3805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -3888,7 +3888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4032,7 +4032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4084,7 +4084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4136,7 +4136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4188,7 +4188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4240,7 +4240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4424,7 +4424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4476,7 +4476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4528,7 +4528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4580,7 +4580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4706,7 +4706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5005,7 +5005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5057,7 +5057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5109,7 +5109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5161,7 +5161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5213,7 +5213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5265,7 +5265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5317,7 +5317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5369,7 +5369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5421,7 +5421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5473,7 +5473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5525,7 +5525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5577,7 +5577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5629,7 +5629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5681,7 +5681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5733,7 +5733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5903,7 +5903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -5955,7 +5955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6007,7 +6007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6133,7 +6133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6259,7 +6259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6311,7 +6311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6363,7 +6363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6481,7 +6481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6533,7 +6533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6585,7 +6585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6637,7 +6637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6689,7 +6689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6741,7 +6741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6882,7 +6882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6934,7 +6934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -6986,7 +6986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7038,7 +7038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7090,7 +7090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7142,7 +7142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7506,7 +7506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7558,7 +7558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7684,7 +7684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7868,7 +7868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7920,7 +7920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -7972,7 +7972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8024,7 +8024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8242,7 +8242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8294,7 +8294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8346,7 +8346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8398,7 +8398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8450,7 +8450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8584,7 +8584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8636,7 +8636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8688,7 +8688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8814,7 +8814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -8998,7 +8998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9050,7 +9050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9181,7 +9181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9233,7 +9233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9285,7 +9285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9337,7 +9337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9389,7 +9389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9441,7 +9441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9493,7 +9493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9545,7 +9545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9671,7 +9671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9802,7 +9802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9854,7 +9854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9906,7 +9906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -9958,7 +9958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10010,7 +10010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10062,7 +10062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10135,7 +10135,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678267478}
-  m_LocalRotation: {x: -0.0063688285, y: 0.000000017208135, z: 1.0959788e-10, w: 0.99997973}
+  m_LocalRotation: {x: -0.0063688285, y: -0.000000017208134, z: -1.09597866e-10, w: 0.99997973}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10262,7 +10262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10314,7 +10314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10366,7 +10366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10418,7 +10418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10470,7 +10470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10522,7 +10522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10574,7 +10574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10626,7 +10626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10678,7 +10678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10804,7 +10804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -10856,7 +10856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11139,7 +11139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11191,7 +11191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11243,7 +11243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11295,7 +11295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11347,7 +11347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11473,7 +11473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11525,7 +11525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11577,7 +11577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11629,7 +11629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11681,7 +11681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11733,7 +11733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11785,7 +11785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11837,7 +11837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11889,7 +11889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11941,7 +11941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -11993,7 +11993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12045,7 +12045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12097,7 +12097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12149,7 +12149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12201,7 +12201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12253,7 +12253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12305,7 +12305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12357,7 +12357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12489,7 +12489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12541,7 +12541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12593,7 +12593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12645,7 +12645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -12697,7 +12697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
-  canRespawnTargets: 0
+  canRespawnTargets: 1
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
