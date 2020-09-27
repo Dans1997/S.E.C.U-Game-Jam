@@ -47,9 +47,4 @@ public class ProjectilePool : MonoBehaviour
         projectileToReturn.gameObject.SetActive(true);
         return projectileToReturn;
     }
-
-    void OnDestroy()
-    {
-        Projectile.OnProjectileCollision -= ProjectileCollisionHandler;
-    }
 }

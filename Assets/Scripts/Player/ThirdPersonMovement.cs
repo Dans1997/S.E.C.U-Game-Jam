@@ -47,29 +47,27 @@ public class ThirdPersonMovement : MonoBehaviour
         //Vector3 direction = new Vector3(horizontal, 0f, vertical);
 
         // Only move forward
-        if (controller.isGrounded)
+        if (vertical > 0f)
         {
-            if (vertical > 0f)
-            {
-                movementVector = transform.forward * movementSpeed;
-            }
-            else if (vertical < 0f)
-            {
-                movementVector = -transform.forward * movementSpeed;
-            }
-            else if (horizontal < 0f)
-            {
-                movementVector = -transform.right * movementSpeed;
-            }
-            else if (horizontal > 0f)
-            {
-                movementVector = transform.right * movementSpeed;
-            }
-            else
-            {
-                movementVector = Vector3.zero;
-            }
+            movementVector = transform.forward * movementSpeed;
         }
+        else if (vertical < 0f)
+        {
+            movementVector = -transform.forward * movementSpeed;
+        }
+        else if (horizontal < 0f)
+        {
+            movementVector = -transform.right * movementSpeed;
+        }
+        else if (horizontal > 0f)
+        {
+            movementVector = transform.right * movementSpeed;
+        }
+        else
+        {
+            movementVector = Vector3.zero;
+        }
+        
     }
 
     private void HandleMovementDirection()

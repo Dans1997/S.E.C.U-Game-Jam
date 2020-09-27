@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
         Target targetHit = collision.gameObject.GetComponentInParent<Target>();
         if (targetHit && targetHit.code == target)
         {
-            targetHit.OnTargetHit();
+            Destroy(targetHit.gameObject);
         }
 
         // If the projectile collides with anything

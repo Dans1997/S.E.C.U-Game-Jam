@@ -17,15 +17,14 @@ public class ScoreSystem : MonoBehaviour
         if (scoreText)
         {
             scoreText.text = "0";
-
-            // Event Handler
-            Target.OnTargetHitEvent += Target_TargetDestroyed;
+            Target.OnTargetDestroy += Target_TargetDestroyed;
         }
     }
 
     private void Target_TargetDestroyed(Target targetHit)
     {
         int scoreToAdd = targetHit.scoreValue;
+        Debug.Log("Target Destroyed!");
         AddScore(scoreToAdd);
     }
 
@@ -42,10 +41,5 @@ public class ScoreSystem : MonoBehaviour
             score += scoreToAdd;
             scoreText.text = score.ToString();
         }
-    }
-
-    private void OnDestroy()
-    {
-        Target.OnTargetHitEvent -= Target_TargetDestroyed;
     }
 }
