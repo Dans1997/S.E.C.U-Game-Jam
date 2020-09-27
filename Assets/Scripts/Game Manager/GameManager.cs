@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,11 +7,16 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [Header("Level Round Time in Seconds")]
-    [SerializeField] int gameTime = 180;
+    [SerializeField] int gameTime = 60;
 
     // Cached Components
     [SerializeField] Text timeText;
     MenuController menuController = null;
+
+    // State
+    int targetsHit = 0;
+    int targetsHitForBonus = 5;
+    int timeBonus = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +24,20 @@ public class GameManager : MonoBehaviour
         timeText.text = gameTime.ToString();
         StartCoroutine(Timer());
         menuController = FindObjectOfType<MenuController>();
+
+        // Target Hit Handler
+        Target.OnTargetHitEvent += HandleTimeBonus;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HandleTimeBonus(Target obj)
     {
-        
+        targetsHit++;
+        if (targetsHit >= targetsHitForBonus)
+        {
+            targetsHit = 0;
+            gameTime += timeBonus;
+            timeText.text = gameTime.ToString();
+        }
     }
 
     IEnumerator Timer()
