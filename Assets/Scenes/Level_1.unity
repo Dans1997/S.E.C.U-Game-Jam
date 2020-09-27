@@ -472,6 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
+  canRespawnTargets: 0
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -2365,6 +2366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPrefab: {fileID: 4203602681475663098, guid: 09f2ba268b903514a924d77e919c8210, type: 3}
+  objectNumber: 120
 --- !u!1 &827976377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,7 +2630,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.019238245, y: 0.0000000037572194, z: -7.229569e-11, w: 0.9998149}
+  m_LocalRotation: {x: 0.019238245, y: -0.000000001926709, z: 3.7073362e-11, w: 0.9998149}
   m_LocalPosition: {x: 2.15, y: 10.57, z: -73.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2919,6 +2921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
+  canRespawnTargets: 0
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4526,7 +4529,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678267478}
-  m_LocalRotation: {x: -0.0063688266, y: 0.000000017224924, z: 1.0970478e-10, w: 0.99997973}
+  m_LocalRotation: {x: -0.0063688266, y: -0.000000017224924, z: -1.0970478e-10, w: 0.99997973}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4645,7 +4648,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761877048}
-  m_LocalRotation: {x: 0.019238247, y: 0.0000000032632093, z: -6.2790044e-11, w: 0.9998149}
+  m_LocalRotation: {x: 0.019238248, y: -4.940099e-10, z: 9.505649e-12, w: 0.9998149}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4777,6 +4780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
+  canRespawnTargets: 0
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
@@ -4828,6 +4832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 5
   maxSpawnDelay: 10
+  canRespawnTargets: 0
   targetToSpawnScoreValue: 10
   materialArray:
   - {fileID: 2100000, guid: 90cc700b566d92e4e99ca6fddfe2a2eb, type: 2}
