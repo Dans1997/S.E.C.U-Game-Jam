@@ -7,7 +7,7 @@ public class TargetPool : MonoBehaviour
     [SerializeField] Target targetPrefab = null;
 
     // State
-    int objectNumber = 50;
+    [SerializeField]int objectNumber = 120;
     Queue<Target> targetPool = new Queue<Target>();
 
     // Start is called before the first frame update
