@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StaticTargetSpawner : MonoBehaviour
 {
-    // State 
     [SerializeField] float minSpawnDelay = 5f;
     [SerializeField] float maxSpawnDelay = 10f;
 
@@ -15,44 +14,41 @@ public class StaticTargetSpawner : MonoBehaviour
     [SerializeField] Material[] materialArray = null; // In order of index
 
     // Cached Components
-    Target currentTarget = null;
     TargetPool targetPool = null;
-    Coroutine spawnTargetCoroutine = null;
+    Target currentTarget = null;
 
     // Start is called before the first frame update
     void Start()
     {
         targetPool = FindObjectOfType<TargetPool>();
-
-        spawnTargetCoroutine = StartCoroutine(SpawnTarget());
-
-        // Event Handler
-        Target.OnTargetDestroy += TargetHitHandler;
+        StartCoroutine(SpawnTarget());
     }
 
-    private void TargetHitHandler(Target targetToPool)
+    // Update is called once per frame
+    void Update()
     {
-        if (spawnTargetCoroutine != null) StopCoroutine(spawnTargetCoroutine);
-        spawnTargetCoroutine = StartCoroutine(SpawnTarget());
+        if (transform.childCount != 1)
+        {
+            StartCoroutine(SpawnTarget());
+        }
     }
 
     IEnumerator SpawnTarget()
     {
+        currentTarget = targetPool.GetTarget();
+        if (!currentTarget) yield break;
+        currentTarget.transform.parent = transform;
+
         float spawnDelay = Random.Range(minSpawnDelay, maxSpawnDelay);
+
         int targetCode = Random.Range((int)TargetCode.Red, (int)TargetCode.Black + 1);
         TargetCode targetToSpawnCode = (TargetCode) targetCode;
         yield return new WaitForSeconds(spawnDelay);
-        if (currentTarget == null)
-        {
-            currentTarget = targetPool.GetTarget();
-            if (currentTarget)
-            {
-                currentTarget.transform.position = transform.position;
-                currentTarget.transform.localScale = new Vector3(10, 10, 10); // Temporary
-                currentTarget.code = targetToSpawnCode;
-                if (materialArray[targetCode]) currentTarget.meshRenderer.material = materialArray[targetCode];
-                currentTarget.scoreValue = targetToSpawnScoreValue;
-            }
-        }
+
+        currentTarget.transform.localPosition = Vector3.zero;
+        currentTarget.transform.localScale = new Vector3(1, 1, 1);
+        currentTarget.code = targetToSpawnCode;
+        if (materialArray[targetCode]) currentTarget.meshRenderer.material = materialArray[targetCode];
+        currentTarget.scoreValue = targetToSpawnScoreValue;
     }
 }

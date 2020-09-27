@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TargetPool : MonoBehaviour
 {
-    [SerializeField] Target targetPrefab;
+    [SerializeField] Target targetPrefab = null;
 
     // State
     int objectNumber = 50;
@@ -24,11 +24,17 @@ public class TargetPool : MonoBehaviour
         }
 
         // Event Handler
-        Target.OnTargetDestroy += TargetHitHandler;
+        Target.OnTargetHitEvent += PoolTarget;
     }
 
-    private void TargetHitHandler(Target targetToPool)
+    private void PoolTarget(Target targetToPool)
     {
+        if (!targetToPool)
+        {
+            Debug.LogWarning("(TargetPool) Can't pool a null object.");
+            return;
+        }
+        targetToPool.transform.parent = transform;
         targetToPool.gameObject.SetActive(false);
         targetPool.Enqueue(targetToPool);
     }
@@ -39,5 +45,10 @@ public class TargetPool : MonoBehaviour
         Target targetToReturn = targetPool.Dequeue();
         targetToReturn.gameObject.SetActive(true);
         return targetToReturn;
+    }
+
+    void OnDestroy()
+    {
+        Target.OnTargetHitEvent -= PoolTarget;
     }
 }
