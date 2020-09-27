@@ -9,7 +9,6 @@ using Cinemachine;
 
 public class MenuController : MonoBehaviour
 {
-
     public GameObject pauseMenu;
     public GameObject gameOver;
     public GameObject camObj;
@@ -43,11 +42,6 @@ public class MenuController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape) && isOnPause)
         {
             exitPause();
-        }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            isGameOver = true;
         }
 
         if (isGameOver)
