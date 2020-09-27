@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
 
     // State
     int targetsHit = 0;
-    int targetsHitForBonus = 5;
-    int timeBonus = 10;
+    [SerializeField] int targetsHitForBonus = 5;
+    [SerializeField] int timeBonus = 10;
 
     // Start is called before the first frame update
     void Start()

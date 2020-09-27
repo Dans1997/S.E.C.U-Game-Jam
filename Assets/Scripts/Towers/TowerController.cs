@@ -1,9 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerController : MonoBehaviour
 {
+
+    // To show crosshair when using totem
+    public GameObject crosshair;
+    public Toggle crosshairToggle;
+
     // Tower Camera Look Controls
     public static float mouseSensitivity = 100f;
     float xRotation = 0f;
@@ -49,6 +55,10 @@ public class TowerController : MonoBehaviour
         if (towerCamera.enabled && pressedEThisFrame)
         {
             cameraSelector.ReturnToThirdView();
+
+            // Hide crosshair
+            crosshair.SetActive(false);
+
             return;
         }
 
@@ -56,6 +66,9 @@ public class TowerController : MonoBehaviour
         if(distanceToPlayer <= towerRange && pressedEThisFrame)
         {
             cameraSelector.SwitchToCamera(towerCamera);
+
+            // Show crosshair
+            crosshair.SetActive(crosshairToggle.isOn);
         }
     }
 
