@@ -33,7 +33,7 @@ public class StaticTargetSpawner : MonoBehaviour
     {
         if (transform.childCount < 1 && canRespawnTargets)
         {
-            Debug.Log("Respawning");
+            //Debug.Log("Respawning");
             StartCoroutine(SpawnTarget());
         }
         else if (transform.childCount == 1 && !hasSpawnedOnce && !canRespawnTargets)
