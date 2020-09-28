@@ -1636,7 +1636,7 @@ PrefabInstance:
       objectReference: {fileID: 1541149052}
     - target: {fileID: 6127667530450215105, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
       propertyPath: projectileToShootCode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
@@ -7812,7 +7812,7 @@ PrefabInstance:
       objectReference: {fileID: 1541149052}
     - target: {fileID: 6127667530450215105, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
       propertyPath: projectileToShootCode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
@@ -8151,7 +8151,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321274344}
-  m_LocalRotation: {x: 0.02497659, y: -0.000000017201012, z: 4.2975679e-10, w: 0.999688}
+  m_LocalRotation: {x: 0.024976611, y: 0.000000017201012, z: -4.2975712e-10, w: 0.999688}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10950,7 +10950,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678267478}
-  m_LocalRotation: {x: -0.0063688257, y: -0.000000017208134, z: -1.0959782e-10, w: 0.99997973}
+  m_LocalRotation: {x: -0.0063688257, y: 0.000000017208135, z: 1.0959783e-10, w: 0.99997973}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11574,7 +11574,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761877048}
-  m_LocalRotation: {x: 0.019238247, y: -0.0000000032632093, z: 6.2790044e-11, w: 0.9998149}
+  m_LocalRotation: {x: 0.019238247, y: -0.0000000032632095, z: 6.2790044e-11, w: 0.9998149}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11763,7 +11763,7 @@ PrefabInstance:
       objectReference: {fileID: 1541149052}
     - target: {fileID: 6127667530450215105, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
       propertyPath: projectileToShootCode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
@@ -15684,7 +15684,7 @@ PrefabInstance:
       objectReference: {fileID: 1541149052}
     - target: {fileID: 6127667530450215105, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
       propertyPath: projectileToShootCode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4220bc7541e181b43b643e7b0533a75d, type: 3}
