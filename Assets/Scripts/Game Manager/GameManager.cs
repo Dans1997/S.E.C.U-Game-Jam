@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int gameTime = 25;
 
     // Cached Components
-    [SerializeField] Text timeText;
+    [SerializeField] Text timeText = null;
     MenuController menuController = null;
 
     // State
