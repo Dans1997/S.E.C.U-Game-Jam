@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f37f072aedc61c468c223f080920567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePower: 60
+  firePower: 200
   projectileToShootCode: 0
   projectileMaterial: {fileID: 0}
 --- !u!114 &4643231265125043862

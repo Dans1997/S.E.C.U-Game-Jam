@@ -6,7 +6,7 @@ using UnityEngine;
 public class TowerShooter : MonoBehaviour
 {
     [Header("Projectile Variables")]
-    [SerializeField] float firePower = 50f;
+    [SerializeField] float firePower = 200f;
     [SerializeField] TargetCode projectileToShootCode = TargetCode.Blue;
     [SerializeField] Material projectileMaterial = null;
 
