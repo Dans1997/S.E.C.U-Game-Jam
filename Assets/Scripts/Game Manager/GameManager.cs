@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [Header("Level Round Time in Seconds")]
-    [SerializeField] int gameTime = 60;
+    [SerializeField] int gameTime = 25;
 
     // Cached Components
     [SerializeField] Text timeText;
