@@ -67,6 +67,20 @@ MonoBehaviour:
   rotationSpeed: 8
   gravity: 30
   jumpForce: 16
+--- !u!114 &2782309504300018154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270968126791759191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94290f015a779944181a602e48aaece9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: 0.1, z: 0}
+  period: 2
 --- !u!1001 &9081799338388948998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32aeaf7e84efb9d4abff52cad936aa71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.214
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32aeaf7e84efb9d4abff52cad936aa71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -140,6 +154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32aeaf7e84efb9d4abff52cad936aa71, type: 3}
+--- !u!1 &8270968126791759191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32aeaf7e84efb9d4abff52cad936aa71, type: 3}
+  m_PrefabInstance: {fileID: 9081799338388948998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8756036834367139821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 32aeaf7e84efb9d4abff52cad936aa71, type: 3}

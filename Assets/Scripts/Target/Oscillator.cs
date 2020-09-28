@@ -17,7 +17,7 @@ public class Oscillator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startingPos = transform.position;
+        startingPos = transform.localPosition;
         sign = Mathf.Sign(Random.Range(-1f, 1f));
         movementVector *= sign;
     }
@@ -33,6 +33,6 @@ public class Oscillator : MonoBehaviour
         movementFactor = rawSinWave / 2f;
 
         Vector3 offset = movementFactor * movementVector;
-        transform.position = startingPos + offset;
+        transform.localPosition = startingPos + offset;
     }
 }
