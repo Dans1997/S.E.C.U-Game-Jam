@@ -6,6 +6,9 @@ public class CameraSelector : MonoBehaviour
 {
     public static CameraSelector CameraSelectorInstance;
 
+    // Player
+    ThirdPersonMovement player;
+
     // Default Camera
     GameObject thirdPersonCamera;
 
@@ -22,6 +25,7 @@ public class CameraSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = FindObjectOfType<ThirdPersonMovement>();
         thirdPersonCamera = GameObject.FindGameObjectWithTag("Third Person Camera");
         cameras = FindObjectsOfType<Camera>();
         DeactivateAllCameras();
@@ -30,12 +34,14 @@ public class CameraSelector : MonoBehaviour
     // This function deactivates the Third Person Camera and Activates the given Camera
     public void SwitchToCamera(Camera newCamera)
     {
+        player.enabled = false;
         thirdPersonCamera.SetActive(false);
         newCamera.enabled = true;
     }
 
     public void ReturnToThirdView()
     {
+        player.enabled = true;
         thirdPersonCamera.SetActive(true);
         DeactivateAllCameras();
     }
