@@ -31,7 +31,7 @@ public class StaticTargetSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount < 1 && !hasSpawnedOnce)
+        if (transform.childCount < 1 && !hasSpawnedOnce && canRespawnTargets)
         {
             StartCoroutine(SpawnTarget());
         }
@@ -50,16 +50,31 @@ public class StaticTargetSpawner : MonoBehaviour
         currentTarget = targetPool.GetTarget();
         if (!currentTarget) yield break;
         currentTarget.transform.parent = transform;
+        currentTarget.transform.localPosition = Vector3.zero;
+        currentTarget.gameObject.SetActive(true);
 
-        int targetCode = Random.Range((int)TargetCode.Red, (int)TargetCode.Black + 1);
-        TargetCode targetToSpawnCode = (TargetCode) targetCode;
+        if (!hasSpawnedOnce)
+        {
+            Debug.Log("SET TARGET from HASNT SPAWNED");
+            SetTarget();
+            hasSpawnedOnce = true;
+            yield break;
+        }
+
         if (canRespawnTargets)
         {
             float spawnDelay = Random.Range(minSpawnDelay, maxSpawnDelay);
             yield return new WaitForSeconds(spawnDelay);
         }
 
-        currentTarget.transform.localPosition = Vector3.zero;
+        SetTarget();
+    }
+
+    private void SetTarget()
+    {
+        int targetCode = Random.Range((int)TargetCode.Red, (int)TargetCode.Black + 1);
+        TargetCode targetToSpawnCode = (TargetCode)targetCode;
+
         currentTarget.transform.localScale = new Vector3(1, 1, 1);
         currentTarget.code = targetToSpawnCode;
         if (materialArray[targetCode]) currentTarget.meshRenderer.material = materialArray[targetCode];

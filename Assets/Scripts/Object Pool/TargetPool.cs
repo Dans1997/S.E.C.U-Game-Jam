@@ -43,7 +43,6 @@ public class TargetPool : MonoBehaviour
     {
         if (targetPool.Count <= 0) return null;
         Target targetToReturn = targetPool.Dequeue();
-        targetToReturn.gameObject.SetActive(true);
         return targetToReturn;
     }
 
