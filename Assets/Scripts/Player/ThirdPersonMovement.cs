@@ -15,12 +15,14 @@ public class ThirdPersonMovement : MonoBehaviour
     // Cached Components
     CharacterController controller = null;
     Camera mainCamera = null;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        animator = GetComponent<Animator>();
 
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
@@ -48,22 +50,43 @@ public class ThirdPersonMovement : MonoBehaviour
         if (vertical > 0f)
         {
             movementVector = transform.forward * movementSpeed;
+            animator.SetBool("isRunning", true);
+            animator.SetBool("isRunningRight", false);
+            animator.SetBool("isRunningLeft", false);
+            animator.SetBool("isRunningBack", false);
         }
         else if (vertical < 0f)
         {
             movementVector = -transform.forward * movementSpeed;
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningRight", false);
+            animator.SetBool("isRunningLeft", false);
+            animator.SetBool("isRunningBack", true);
         }
         else if (horizontal < 0f)
         {
             movementVector = -transform.right * movementSpeed;
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningRight", false);
+            animator.SetBool("isRunningLeft", true);
+            animator.SetBool("isRunningBack", false);
         }
         else if (horizontal > 0f)
         {
             movementVector = transform.right * movementSpeed;
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningRight", true);
+            animator.SetBool("isRunningLeft", false);
+            animator.SetBool("isRunningBack", false);
         }
         else
         {
             movementVector = Vector3.zero;
+            movementVector = transform.right * movementSpeed;
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningRight", false);
+            animator.SetBool("isRunningLeft", false);
+            animator.SetBool("isRunningBack", false);
         }
         
     }
