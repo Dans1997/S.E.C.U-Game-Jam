@@ -55,7 +55,6 @@ public class StaticTargetSpawner : MonoBehaviour
 
         if (!hasSpawnedOnce)
         {
-            Debug.Log("SET TARGET from HASNT SPAWNED");
             SetTarget();
             hasSpawnedOnce = true;
             yield break;
