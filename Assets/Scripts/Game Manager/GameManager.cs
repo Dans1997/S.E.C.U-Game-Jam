@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         {
             targetsHit = 0;
             gameTime += timeBonus;
-            if (timeText.text != null)
+            if (timeText != null)
                 timeText.text = gameTime.ToString();
         }
     }
