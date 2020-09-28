@@ -31,8 +31,9 @@ public class StaticTargetSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount < 1 && !hasSpawnedOnce && canRespawnTargets)
+        if (transform.childCount < 1 && canRespawnTargets)
         {
+            Debug.Log("Respawning");
             StartCoroutine(SpawnTarget());
         }
         else if (transform.childCount == 1 && !hasSpawnedOnce && !canRespawnTargets)
@@ -51,7 +52,6 @@ public class StaticTargetSpawner : MonoBehaviour
         if (!currentTarget) yield break;
         currentTarget.transform.parent = transform;
         currentTarget.transform.localPosition = Vector3.zero;
-        currentTarget.gameObject.SetActive(true);
 
         if (!hasSpawnedOnce)
         {
@@ -74,6 +74,7 @@ public class StaticTargetSpawner : MonoBehaviour
         int targetCode = Random.Range((int)TargetCode.Red, (int)TargetCode.Black + 1);
         TargetCode targetToSpawnCode = (TargetCode)targetCode;
 
+        currentTarget.gameObject.SetActive(true);
         currentTarget.transform.localScale = new Vector3(1, 1, 1);
         currentTarget.code = targetToSpawnCode;
         if (materialArray[targetCode]) currentTarget.meshRenderer.material = materialArray[targetCode];
