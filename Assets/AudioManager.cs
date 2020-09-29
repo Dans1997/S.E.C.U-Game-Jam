@@ -125,9 +125,6 @@ public class AudioManager : MonoBehaviour
 
         // Main Theme
         PlaySound(SoundKey.MainTheme, transform.position);
-
-        // Transition Sound
-        PlaySound(SoundKey.Transition);
     }
 
     public void PlaySelectButton() => PlaySound(SoundKey.Button);
@@ -157,7 +154,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Sound " + soundKey + "not found!");
+            Debug.LogError("Sound " + soundKey + " not found!");
         }
     }
 
