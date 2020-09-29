@@ -43,6 +43,7 @@ public class AudioManager : MonoBehaviour
         ProjectileFour,
 
         TargetHit1,
+        TimeOver,
     }
 
     [System.Serializable]
