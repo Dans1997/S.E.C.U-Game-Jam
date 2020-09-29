@@ -11,6 +11,9 @@ public class ProjectilePool : MonoBehaviour
     // State
     Queue<Projectile> projectilePool = new Queue<Projectile>();
 
+    // Cached Components
+    AudioManager audioManager = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,8 @@ public class ProjectilePool : MonoBehaviour
             newProjectile.gameObject.SetActive(false);
             projectilePool.Enqueue(newProjectile);
         }
+
+        audioManager = AudioManager.AudioManagerInstance;
 
         // Event Handler
         Projectile.OnProjectileCollision += ProjectileCollisionHandler;

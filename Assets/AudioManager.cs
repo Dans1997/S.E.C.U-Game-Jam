@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
 
         TargetHit1,
         TimeOver,
+        TargetMiss1
     }
 
     [System.Serializable]
