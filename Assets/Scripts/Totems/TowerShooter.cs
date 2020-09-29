@@ -47,7 +47,7 @@ public class TowerShooter : MonoBehaviour
             }
 
             // Shake Camera
-            cameraShake3D.ShakeOnce(0.3f, 0.05f);
+            cameraShake3D.ShakeOnce(0.3f, 0.1f);
 
             StartCoroutine(Cooldown());
         }

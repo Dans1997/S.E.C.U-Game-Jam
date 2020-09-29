@@ -133,7 +133,7 @@ public class MenuController : MonoBehaviour
         sliderX.value = 450f;
         sliderY.value = 4f;
 
-        crosshairToggled.isOn = false;
+        crosshairToggled.isOn = true;
     }
 
     public void ApplyConfig()
