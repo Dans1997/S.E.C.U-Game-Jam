@@ -22,7 +22,10 @@ public class Projectile : MonoBehaviour
         {
             targetHit.OnTargetHit();
         }
-
+        else
+        {
+            AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.TargetMiss1, transform.position);
+        }
         // If the projectile collides with anything
         OnProjectileCollision?.Invoke(this);
     }
