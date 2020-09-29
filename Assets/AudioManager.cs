@@ -41,6 +41,8 @@ public class AudioManager : MonoBehaviour
         ProjectileTwo,
         ProjectileThree,
         ProjectileFour,
+
+        TargetHit1,
     }
 
     [System.Serializable]
