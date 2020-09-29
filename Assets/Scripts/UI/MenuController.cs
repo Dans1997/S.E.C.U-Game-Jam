@@ -40,7 +40,6 @@ public class MenuController : MonoBehaviour
         {
             if (!isGameOver)
             {
-                Debug.Log(PlayerPrefs.GetInt("PlayerRecord"));
                 ShowPause();
             }
         }
