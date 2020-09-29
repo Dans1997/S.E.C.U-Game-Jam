@@ -10,6 +10,9 @@ public class TargetPool : MonoBehaviour
     [SerializeField]int objectNumber = 120;
     Queue<Target> targetPool = new Queue<Target>();
 
+    // Cached Components
+    AudioManager audioManager = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,8 @@ public class TargetPool : MonoBehaviour
             newTarget.gameObject.SetActive(false);
             targetPool.Enqueue(newTarget);
         }
+
+        audioManager = AudioManager.AudioManagerInstance;
 
         // Event Handler
         Target.OnTargetHitEvent += PoolTarget;

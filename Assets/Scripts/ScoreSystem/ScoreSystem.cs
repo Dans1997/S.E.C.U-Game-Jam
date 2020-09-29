@@ -11,6 +11,9 @@ public class ScoreSystem : MonoBehaviour
     // State
     int score = 0;
 
+    // Cached Components
+    AudioManager audioManager = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,8 @@ public class ScoreSystem : MonoBehaviour
             // Event Handler
             Target.OnTargetHitEvent += Target_TargetDestroyed;
         }
+
+        audioManager = AudioManager.AudioManagerInstance;
     }
 
     private void Target_TargetDestroyed(Target targetHit)
@@ -41,6 +46,9 @@ public class ScoreSystem : MonoBehaviour
         {
             score += scoreToAdd;
             scoreText.text = score.ToString();
+
+            // Play Score Add Sound
+            audioManager.PlaySound(AudioManager.SoundKey.TargetHit1);
         }
     }
 
