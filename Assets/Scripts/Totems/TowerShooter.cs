@@ -37,6 +37,7 @@ public class TowerShooter : MonoBehaviour
             Projectile projectileToShoot = projectilePool.GetProjectile(); 
             if(projectileToShoot)
             {
+                AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.ProjectileOne);
                 projectileToShoot.transform.position = transform.position;
                 projectileToShoot.rigidBody.angularVelocity = Vector3.zero;
                 projectileToShoot.rigidBody.rotation = Quaternion.LookRotation(transform.forward, transform.up);

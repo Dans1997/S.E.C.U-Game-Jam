@@ -26,35 +26,22 @@ public class AudioManager : MonoBehaviour
 
     public enum SoundKey
     {
-        PlayerMove,
-        PlayerPower,
-        PlayerDeath,
+        PlayerWalk,
+        PlayerJump,
         PlayerGroundHit,
 
         MainTheme,
         Transition,
         Button,
+        ButtonHighlight,
 
-        TileLightUp1,
-        TileLightUp2,
-        TileLightUp3,
-        TileLightUp4,
+        LevelTheme,
+        LevelAmbience,
+        ProjectileOne,
+        ProjectileTwo,
+        ProjectileThree,
+        ProjectileFour,
 
-        FireTileWarmUp,
-        FireTileLightUp1,
-
-        TileLightDown1,
-
-        Footstep,
-
-        Reboot,
-
-        CyberTile1,
-        CyberTileZap1,
-
-        SoulTileStep,
-        TeleportIn,
-        TeleportOut,
     }
 
     [System.Serializable]
@@ -171,6 +158,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    
     public AudioSource PlaySound(SoundKey soundKey, Vector3 position)
     {
         Sound sound = System.Array.Find(gameSounds, s => s.soundKey == soundKey);
@@ -190,7 +178,7 @@ public class AudioManager : MonoBehaviour
                 audioSource.clip = sound.clip;
                 audioSource.volume = sound.volume;
                 audioSource.pitch = sound.pitch;
-                audioSource.spatialBlend = sound.spatialBlend;
+                //audioSource.spatialBlend = sound.spatialBlend;
                 audioSource.loop = sound.loop;
                 audioSource.dopplerLevel = 0f;
 
@@ -214,6 +202,17 @@ public class AudioManager : MonoBehaviour
             return null;
         }
     }
+
+    public AudioSource StopSound(AudioSource audioSource, Vector3 position)
+    {
+        
+       audioSource.Stop();
+
+       return audioSource;
+           
+        
+    }
+
 
     IEnumerator Return3DSourceToPool(AudioSource audioSource)
     {

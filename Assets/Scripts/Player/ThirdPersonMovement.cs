@@ -17,6 +17,10 @@ public class ThirdPersonMovement : MonoBehaviour
     Camera mainCamera = null;
     Animator animator;
 
+    // Audio stuff
+    private AudioSource walkingAudio;
+    private bool isRunning = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
+        
     }
 
     // Update is called once per frame
@@ -54,11 +59,20 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", false);
             animator.SetBool("isRunningBack", false);
+            if (!isRunning)
+            {
+                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+
+                Debug.Log("Playing sound");
+                isRunning = true;
+            }
+           
         }
         else if (vertical < 0f)
         {
             movementVector = -transform.forward * movementSpeed;
             animator.SetBool("isRunning", false);
+            
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", false);
             animator.SetBool("isRunningBack", true);
@@ -67,6 +81,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             movementVector = -transform.right * movementSpeed;
             animator.SetBool("isRunning", false);
+            
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", true);
             animator.SetBool("isRunningBack", false);
@@ -75,6 +90,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             movementVector = transform.right * movementSpeed;
             animator.SetBool("isRunning", false);
+            
             animator.SetBool("isRunningRight", true);
             animator.SetBool("isRunningLeft", false);
             animator.SetBool("isRunningBack", false);
@@ -83,6 +99,14 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             movementVector = Vector3.zero;
             animator.SetBool("isRunning", false);
+            
+            if (isRunning)
+            {
+                AudioManager.AudioManagerInstance.StopSound(walkingAudio, transform.position);
+                Debug.Log("Stopping sound");
+                isRunning = false;
+            }
+            
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", false);
             animator.SetBool("isRunningBack", false);
