@@ -10,6 +10,8 @@ using Cinemachine;
 
 public class MenuController : MonoBehaviour
 {
+    public static MenuController instance;
+
     public GameObject pauseMenu;
     public GameObject gameOver;
     public GameObject camObj;
@@ -31,6 +33,8 @@ public class MenuController : MonoBehaviour
     {
         camObj = GameObject.FindWithTag("Third Person Camera");
         freeLook = camObj.GetComponent<CinemachineFreeLook>();
+    
+        instance = this;
     }
 
     public void Update()
@@ -48,43 +52,44 @@ public class MenuController : MonoBehaviour
             ExitPause();
         }
 
-        if (isGameOver)
-        {
-            Time.timeScale = 0f;
-
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            
-            gameOver.SetActive(true);
-            gameOverScore.text = gameScore.text;
-
-            // Record system
-            if (PlayerPrefs.GetInt("PlayerRecord", 0) == 0)
-            {
-                PlayerPrefs.SetInt("PlayerRecord", Int32.Parse(gameOverScore.text));
-                gameOverRecord.text = gameOverScore.text;
-            }
-            else
-            {
-                // If beat the record
-                if (PlayerPrefs.GetInt("PlayerRecord") < Int32.Parse(gameOverScore.text))
-                {
-                    gameOverRecord.text = gameOverScore.text;
-                    PlayerPrefs.SetInt("PlayerRecord", Int32.Parse(gameOverScore.text));
-                }
-                // If not, just show the record
-                else
-                {
-                    gameOverRecord.text = PlayerPrefs.GetInt("PlayerRecord").ToString();
-                }
-            }
-
-            // Play Sound
-            AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.TimeOver);
-        }
-
         //Debug.Log(freeLook.m_XAxis.m_MaxSpeed);
         //Debug.Log(freeLook.m_YAxis.m_MaxSpeed);
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        
+        gameOver.SetActive(true);
+        gameOverScore.text = gameScore.text;
+
+        // Record system
+        if (PlayerPrefs.GetInt("PlayerRecord", 0) == 0)
+        {
+            PlayerPrefs.SetInt("PlayerRecord", Int32.Parse(gameOverScore.text));
+            gameOverRecord.text = gameOverScore.text;
+        }
+        else
+        {
+            // If beat the record
+            if (PlayerPrefs.GetInt("PlayerRecord") < Int32.Parse(gameOverScore.text))
+            {
+                gameOverRecord.text = gameOverScore.text;
+                PlayerPrefs.SetInt("PlayerRecord", Int32.Parse(gameOverScore.text));
+            }
+            // If not, just show the record
+            else
+            {
+                gameOverRecord.text = PlayerPrefs.GetInt("PlayerRecord").ToString();
+            }
+        }
+
+        // Play Sound
+        AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.TimeOver);
+
     }
 
     public void ShowPause()

@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
 
     // Cached Components
     [SerializeField] Text timeText = null;
-    MenuController menuController = null;
 
     // State
     int targetsHit = 0;
@@ -27,7 +26,6 @@ public class GameManager : MonoBehaviour
 
         timeText.text = gameTime.ToString();
         StartCoroutine(Timer());
-        menuController = FindObjectOfType<MenuController>();
 
         // Target Hit Handler
         Target.OnTargetHitEvent += HandleTimeBonus;
@@ -54,7 +52,7 @@ public class GameManager : MonoBehaviour
             timeText.text = gameTime.ToString();
             if (gameTime == 0)
             {
-                menuController.isGameOver = true;
+                MenuController.instance.GameOver();
             }
         }
     }
