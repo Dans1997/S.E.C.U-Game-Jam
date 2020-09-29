@@ -76,6 +76,13 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", false);
             animator.SetBool("isRunningBack", true);
+            if (!isRunning)
+            {
+                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+
+                Debug.Log("Playing sound");
+                isRunning = true;
+            }
         }
         else if (horizontal < 0f)
         {
@@ -85,6 +92,13 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", true);
             animator.SetBool("isRunningBack", false);
+            if (!isRunning)
+            {
+                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+
+                Debug.Log("Playing sound");
+                isRunning = true;
+            }
         }
         else if (horizontal > 0f)
         {
@@ -94,6 +108,13 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningRight", true);
             animator.SetBool("isRunningLeft", false);
             animator.SetBool("isRunningBack", false);
+            if (!isRunning)
+            {
+                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+
+                Debug.Log("Playing sound");
+                isRunning = true;
+            }
         }
         else
         {
@@ -138,9 +159,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void HandleMovementJump()
     {
-        if (Input.GetButton("Jump"))
-        {
-            movementVector.y = jumpForce;
-        }
+        //if (Input.GetButton("Jump"))
+        //{
+        //    movementVector.y = jumpForce;
+        //    animator.SetTrigger("isJumping");
+        //    animator.SetBool("isRunning", false);
+
+        //    animator.SetBool("isRunningRight", false);
+        //    animator.SetBool("isRunningLeft", false);
+        //   animator.SetBool("isRunningBack", false);
+        //}
     }
 }
