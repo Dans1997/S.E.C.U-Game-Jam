@@ -7,30 +7,28 @@ public class ThirdPersonMovement : MonoBehaviour
     [SerializeField] float movementSpeed = 6f;
     [SerializeField] float rotationSpeed = 8f;
     [SerializeField] float gravity = 20f;
-    [SerializeField] float jumpForce = 600f;
 
     // State
     Vector3 movementVector = Vector3.zero;
+    bool isRunning = false;
 
     // Cached Components
     CharacterController controller = null;
+    Animator animator = null;
     Camera mainCamera = null;
-    Animator animator;
-
-    // Audio stuff
-    private AudioSource walkingAudio;
-    private bool isRunning = false;
+    AudioManager audioManager = null;
+    AudioSource walkingAudio = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        animator = GetComponent<Animator>();
-
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
         mainCamera = Camera.main;
-        
+        audioManager = AudioManager.AudioManagerInstance;
+
+        walkingAudio = audioManager.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+        walkingAudio.Stop();
     }
 
     // Update is called once per frame
@@ -40,7 +38,6 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             HandleMovementInput();
             HandleMovementDirection();
-            HandleMovementJump();
         }
         
         movementVector.y -= gravity * Time.deltaTime;
@@ -61,7 +58,7 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningBack", false);
             if (!isRunning)
             {
-                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+                if(walkingAudio && !walkingAudio.isPlaying) walkingAudio.Play();
 
                 Debug.Log("Playing sound");
                 isRunning = true;
@@ -78,7 +75,7 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningBack", true);
             if (!isRunning)
             {
-                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+                if (walkingAudio && !walkingAudio.isPlaying) walkingAudio.Play();
 
                 Debug.Log("Playing sound");
                 isRunning = true;
@@ -94,7 +91,7 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningBack", false);
             if (!isRunning)
             {
-                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
+                if (walkingAudio && !walkingAudio.isPlaying) walkingAudio.Play();
 
                 Debug.Log("Playing sound");
                 isRunning = true;
@@ -110,8 +107,7 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("isRunningBack", false);
             if (!isRunning)
             {
-                walkingAudio = AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.PlayerWalk, transform.position);
-
+                if (walkingAudio && !walkingAudio.isPlaying) walkingAudio.Play();
                 Debug.Log("Playing sound");
                 isRunning = true;
             }
@@ -123,7 +119,7 @@ public class ThirdPersonMovement : MonoBehaviour
             
             if (isRunning)
             {
-                AudioManager.AudioManagerInstance.StopSound(walkingAudio, transform.position);
+                if (walkingAudio && walkingAudio.isPlaying) walkingAudio.Stop();
                 Debug.Log("Stopping sound");
                 isRunning = false;
             }
@@ -157,17 +153,8 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    private void HandleMovementJump()
+    private void OnDisable()
     {
-        //if (Input.GetButton("Jump"))
-        //{
-        //    movementVector.y = jumpForce;
-        //    animator.SetTrigger("isJumping");
-        //    animator.SetBool("isRunning", false);
-
-        //    animator.SetBool("isRunningRight", false);
-        //    animator.SetBool("isRunningLeft", false);
-        //   animator.SetBool("isRunningBack", false);
-        //}
+        if (walkingAudio && walkingAudio.isPlaying) walkingAudio.Stop();
     }
 }

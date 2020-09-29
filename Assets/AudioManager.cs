@@ -41,7 +41,6 @@ public class AudioManager : MonoBehaviour
         ProjectileTwo,
         ProjectileThree,
         ProjectileFour,
-
     }
 
     [System.Serializable]
@@ -203,14 +202,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public AudioSource StopSound(AudioSource audioSource, Vector3 position)
+    public AudioSource StopSound(AudioSource audioSource)
     {
-        
-       audioSource.Stop();
-
-       return audioSource;
-           
-        
+       if (audioSource) audioSource.Stop();
+       return audioSource; 
     }
 
 
