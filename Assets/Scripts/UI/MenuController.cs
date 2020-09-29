@@ -87,9 +87,9 @@ public class MenuController : MonoBehaviour
             }
         }
 
-        // Play Sound
+        // Play Game Over Sound
         AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.TimeOver);
-
+        FindObjectOfType<ThirdPersonMovement>().enabled = false;
     }
 
     public void ShowPause()
