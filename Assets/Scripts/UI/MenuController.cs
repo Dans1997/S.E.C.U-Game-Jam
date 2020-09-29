@@ -1,4 +1,6 @@
-﻿using System.Net.Mime;
+﻿using System;
+using System.Numerics;
+using System.Net.Mime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,8 +16,9 @@ public class MenuController : MonoBehaviour
     public GameObject camObj;
     public CinemachineFreeLook freeLook;
 
+    public Text gameScore;
     public Text gameOverScore;
-    public Text gameScore;    
+    public Text gameOverRecord;   
 
     public Slider sliderX;
     public Slider sliderY;
@@ -37,6 +40,7 @@ public class MenuController : MonoBehaviour
         {
             if (!isGameOver)
             {
+                Debug.Log(PlayerPrefs.GetInt("PlayerRecord"));
                 ShowPause();
             }
         }
@@ -49,12 +53,33 @@ public class MenuController : MonoBehaviour
         if (isGameOver)
         {
             Time.timeScale = 0f;
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             
             gameOver.SetActive(true);
             gameOverScore.text = gameScore.text;
 
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            // Record system
+            if (PlayerPrefs.GetInt("PlayerRecord", 0) == 0)
+            {
+                PlayerPrefs.SetInt("PlayerRecord", Int32.Parse(gameOverScore.text));
+                gameOverRecord.text = gameOverScore.text;
+            }
+            else
+            {
+                // If beat the record
+                if (PlayerPrefs.GetInt("PlayerRecord") < Int32.Parse(gameOverScore.text))
+                {
+                    gameOverRecord.text = gameOverScore.text;
+                    PlayerPrefs.SetInt("PlayerRecord", Int32.Parse(gameOverScore.text));
+                }
+                // If not, just show the record
+                else
+                {
+                    gameOverRecord.text = PlayerPrefs.GetInt("PlayerRecord").ToString();
+                }
+            }
         }
 
         //Debug.Log(freeLook.m_XAxis.m_MaxSpeed);
