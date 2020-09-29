@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3150549069865839584}
   - component: {fileID: 8673445106352645544}
   - component: {fileID: 8961444718220072994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 300652267209444212}
   - component: {fileID: 7170228359014811521}
   - component: {fileID: 1188055525800248301}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 2036278988099629776}
   - component: {fileID: 1076584824076632924}
   - component: {fileID: 6443053960251863648}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mouth 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4209235896590627501}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Totem3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 5976226078399799346}
   - component: {fileID: 4578160281278954343}
   - component: {fileID: 5916245675570672473}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 5429294688250265344}
   - component: {fileID: 6786148999684135939}
   - component: {fileID: 9057347085317792614}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 5042998880852587770}
   - component: {fileID: 4843856000810714479}
   - component: {fileID: 1621808430140371389}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 232178514368394381}
   - component: {fileID: 6561509929469620901}
   - component: {fileID: 8147666482714451461}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Teeth1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4382466768360020427}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 6374699029290338473}
   - component: {fileID: 7808462648723188437}
   - component: {fileID: 1174892772750735840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 5914947544894624513}
   - component: {fileID: 4010251384100613120}
   - component: {fileID: 8066829105550901104}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 163921928018549114}
   - component: {fileID: 5026147751718636711}
   - component: {fileID: 2120293566601033684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 5700275283890075517}
   - component: {fileID: 370973949290964953}
   - component: {fileID: 3349701170168289669}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -987,7 +987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6201758286083471424}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eyes 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +1021,7 @@ GameObject:
   - component: {fileID: 7940698731013573042}
   - component: {fileID: 3899714298441087646}
   - component: {fileID: 6220520256483335455}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1100,7 +1100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355578986756050125}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1133,7 +1133,7 @@ GameObject:
   - component: {fileID: 4310521121331576519}
   - component: {fileID: 3718515184461665074}
   - component: {fileID: 764238481124664971}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 2260728734830969010}
   - component: {fileID: 6732156009206819006}
   - component: {fileID: 6596209563153621301}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9174067203510034726}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1339,7 +1339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5283409497928505792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Totem2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,7 +1375,7 @@ GameObject:
   - component: {fileID: 803087256281248687}
   - component: {fileID: 4194726872292600070}
   - component: {fileID: 8569055696868763448}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1456,7 +1456,7 @@ GameObject:
   - component: {fileID: 8644226364791487060}
   - component: {fileID: 945601977426307841}
   - component: {fileID: 4854335658388122147}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1537,7 +1537,7 @@ GameObject:
   - component: {fileID: 6390064476109072165}
   - component: {fileID: 6907222677573874936}
   - component: {fileID: 4459066091858275114}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1618,7 +1618,7 @@ GameObject:
   - component: {fileID: 2491767636587405230}
   - component: {fileID: 5494512181593786120}
   - component: {fileID: 4545303342462121901}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1699,7 @@ GameObject:
   - component: {fileID: 3437549984538894707}
   - component: {fileID: 2933021343283571822}
   - component: {fileID: 5404914792681005428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1778,7 +1778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8651822295732790200}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1812,7 +1812,7 @@ GameObject:
   - component: {fileID: 3772033186925818636}
   - component: {fileID: 2615912830773888338}
   - component: {fileID: 2781269117933789194}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1893,7 +1893,7 @@ GameObject:
   - component: {fileID: 8250690329257325185}
   - component: {fileID: 8739168613109617547}
   - component: {fileID: 3770834794382420213}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1974,7 +1974,7 @@ GameObject:
   - component: {fileID: 1731288688199785942}
   - component: {fileID: 8845713982791308985}
   - component: {fileID: 7657585217599088476}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2295,7 +2295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4091123173323670801}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Totem1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2328,7 +2328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5677303000435036701}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eyes 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,7 +2362,7 @@ GameObject:
   - component: {fileID: 1360570325026777833}
   - component: {fileID: 7023552857060406223}
   - component: {fileID: 1817349817494001835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jewel3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2443,7 +2443,7 @@ GameObject:
   - component: {fileID: 6876863348383898471}
   - component: {fileID: 8020524222843253179}
   - component: {fileID: 4867649298709341461}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
