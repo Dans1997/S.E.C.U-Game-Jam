@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Cinemachine;
 
-
 public class MenuController : MonoBehaviour
 {
     public GameObject pauseMenu;
@@ -80,6 +79,9 @@ public class MenuController : MonoBehaviour
                     gameOverRecord.text = PlayerPrefs.GetInt("PlayerRecord").ToString();
                 }
             }
+
+            // Play Sound
+            AudioManager.AudioManagerInstance.PlaySound(AudioManager.SoundKey.TimeOver);
         }
 
         //Debug.Log(freeLook.m_XAxis.m_MaxSpeed);
