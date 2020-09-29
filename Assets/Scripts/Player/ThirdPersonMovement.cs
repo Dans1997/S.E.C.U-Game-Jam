@@ -82,7 +82,6 @@ public class ThirdPersonMovement : MonoBehaviour
         else
         {
             movementVector = Vector3.zero;
-            movementVector = transform.right * movementSpeed;
             animator.SetBool("isRunning", false);
             animator.SetBool("isRunningRight", false);
             animator.SetBool("isRunningLeft", false);
